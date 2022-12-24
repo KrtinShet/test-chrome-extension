@@ -1,0 +1,42 @@
+{
+  "user": {
+    "id": 1,
+    "email": "user@example.com",
+    "passwordHash": "hashed password",
+    "privateKeyEncrypted": "encrypted private key",
+    "salt": "salt for hashing password"
+  },
+  "accounts": [
+    {
+      "id": 1,
+      "name": "Account 1",
+      "blockchain": "ethereum",
+      "address": "0x123...",
+      "assets": [
+        {
+          "id": 1,
+          "symbol": "ETH",
+          "balance": "100"
+        },
+        {
+          "id": 2,
+          "symbol": "DAI",
+          "balance": "50"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Account 2",
+      "blockchain": "bitcoin",
+      "address": "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2",
+      "assets": [
+        {
+          "id": 3,
+          "symbol": "BTC",
+          "balance": "1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "Chrome Wallet Extension",
+  "description": "Chrome Wallet Extension with react boilerplate",
+  "background": { "service_worker": "backgroundScript.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icons/icon-64.png"
+  },
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "nativeMessaging",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "icons": {
+    "128": "assets/icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/icons/icon-128.png", "assets/icons/icon-64.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "blockchains": {
+    "blockchainId1": {
+      "id": "blockchainId1",
+      "name": "Blockchain 1",
+      "network": "mainnet",
+      "type": "ethereum"
+    },
+    "blockchainId2": {
+      "id": "blockchainId2",
+      "name": "Blockchain 2",
+      "network": "testnet",
+      "type": "bitcoin"
+    }
+  },
+  "accounts": {
+    "accountId1": {
+      "id": "accountId1",
+      "name": "Account 1",
+      "blockchainId": "blockchainId1",
+      "address": "0x1234..."
+    },
+    "accountId2": {
+      "id": "accountId2",
+      "name": "Account 2",
+      "blockchainId": "blockchainId2",
+      "address": "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+    }
+  },
+  "assets": {
+    "assetId1": {
+      "id": "assetId1",
+      "name": "Asset 1",
+      "symbol": "A1",
+      "decimals": 18,
+      "blockchainId": "blockchainId1",
+      "contractAddress": "0x5678..."
+    },
+    "assetId2": {
+      "id": "assetId2",
+      "name": "Asset 2",
+      "symbol": "A2",
+      "decimals": 8,
+      "blockchainId": "blockchainId2",
+      "contractAddress": "3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy"
+    }
+  },
+  "balances": {
+    "balanceId1": {
+      "id": "balanceId1",
+      "assetId": "assetId1",
+      "accountId": "accountId1",
+      "balance": "100"
+    },
+    "balanceId2": {
+      "id": "balanceId2",
+      "assetId": "assetId1",
+      "accountId": "accountId2",
+      "balance": "50"
+    },
+    "balanceId3": {
+      "id": "balanceId3",
+      "assetId": "assetId2",
+      "accountId": "accountId2",
+      "balance": "1"
+    }
+  },
+  "transactions": {
+    "transactionId1": {
+      "id": "transactionId1",
+      "assetId": "assetId1",
+      "fromAccountId": "accountId1",
+      "toAccountId": "accountId2",
+      "value": "10",
+      "timestamp": "2022-01-01T12:00:00Z"
+    },
+    "transactionId2": {
+      "id": "transactionId2",
+      "assetId": "assetId2",
+      "fromAccountId": "accountId2",
+      "toAccountId": "accountId1",
+      "value": "0.5",
+      "timestamp": "2022-01-01T12:00:00Z"
+    }
+  }
+}
+

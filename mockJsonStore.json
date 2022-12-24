@@ -1,0 +1,170 @@
+{
+  "user": {
+    "name": "John Doe",
+    "email": "user@example.com",
+    "passwordHash": "hashed password",
+    "isLoggedIn": false,
+    "isSignedUp": true,
+    "mnemonic": "basketball car address ..."
+  },
+  "accounts": {
+    "ChaiAccount1": {
+      "name": "chai account 1",
+      "ethereum_address": "0x1234567890123456789012345678901234567890",
+      "ethereum_hdpath": "m/44'/60'/0'/0/0",
+      "ethereum_privKey": "0x1234567890123456789012345678901234567890123456789012345678901234",
+      "tron_address": "TWDchZBmYvTQBeXD4w8rRUowDv5ka8kiFU",
+      "tron_hdpath": "m/44'/195'/0'/0/0",
+      "tron_privKey": "0x1234567890123456789012345678901234567890123456789012345678901234"
+    },
+    "ChaiAccount2": {
+      "name": "chai account 2",
+      "evm": {
+        "address": "0x1234567890123456789012345678901234567890",
+        "hdPath": "m/44'/60'/0'/0/1",
+        "privKey": "0x1234567890123456789012345678901234567890123456789012345678901234"
+      },
+      "tron": {
+        "address": "TWDchZBmYvTQBeXD4w8rRUowDv5ka8kiFU",
+        "hdPath": "m/44'/195'/0'/0/1",
+        "privKey": "0x1234567890123456789012345678901234567890123456789012345678901234"
+      }
+    }
+  },
+  "transactions": {
+    "transactionId1": {
+      "id": "transactionId1",
+      "hash": "0x1234567890123456789012345678901234567890123456789012345678901234",
+      "accountId": "ChaiAccount1",
+      "assetId": "assetId1",
+      "amount": "1000000000000000000",
+      "to": "0x1234567890123456789012345678901234567890",
+      "from": "0x1234567890123456789012345678901234567890",
+      "chainId": 1,
+      "status": "pending"
+    }
+  },
+  "assets": {
+    "assetId1": {
+      "id": "assetId1",
+      "name": "ethereum",
+      "symbol": "eth",
+      "decimals": 18,
+      "network": "ethereum",
+      "isNative": true
+    },
+    "assetId2": {
+      "id": "assetId2",
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "decimals": 18,
+      "network": "binance",
+      "isNative": true
+    },
+    "assetId3": {
+      "id": "assetId3",
+      "name": "Polygon Matic",
+      "symbol": "MATIC",
+      "decimals": 18,
+      "network": "polygon",
+      "isNative": true
+    },
+    "assetId4": {
+      "id": "assetId4",
+      "name": "INR Coin",
+      "symbol": "INRC",
+      "decimals": 18,
+      "network": "bitgert",
+      "address": "0x1234567890123456789012345678901234567890",
+      "isNative": false
+    }
+  },
+  "balances": {
+    "balanceId1": {
+      "id": "balanceId1",
+      "accountId": "ChaiAccount1",
+      "assetId": "assetId1",
+      "amount": "1000000000000000000"
+    },
+    "balanceId2": {
+      "id": "balanceId2",
+      "accountId": "ChaiAccount1",
+      "assetId": "assetId2",
+      "amount": "1000000000000000000"
+    }
+  },
+  "networks": {
+    "ethereum": {
+      "name": "Ethereum",
+      "networkId": 1,
+      "chainId": 1,
+      "rpcUrl": "https://mainnet.infura.io/v3/your-api-key",
+      "explorerUrl": "https://etherscan.io",
+      "nativeCurrency": {
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18
+      }
+    },
+    "binance": {
+      "name": "Binance Smart Chain",
+      "networkId": 56,
+      "chainId": 56,
+      "rpcUrl": "https://bsc-dataseed.binance.org/",
+      "explorerUrl": "https://bscscan.com",
+      "nativeCurrency": {
+        "name": "Binance Coin",
+        "symbol": "BNB",
+        "decimals": 18
+      }
+    },
+    "polygon": {
+      "name": "Polygon",
+      "networkId": 137,
+      "chainId": 137,
+      "rpcUrl": "https://rpc-mainnet.maticvigil.com/",
+      "explorerUrl": "https://polygonscan.com",
+      "nativeCurrency": {
+        "name": "Matic",
+        "symbol": "MATIC",
+        "decimals": 18
+      }
+    },
+    "tron": {
+      "name": "Tron",
+      "networkId": 1,
+      "chainId": 1,
+      "rpcUrl": "https://api.trongrid.io",
+      "explorerUrl": "https://tronscan.org",
+      "nativeCurrency": {
+        "name": "Tron",
+        "symbol": "TRX",
+        "decimals": 6
+      }
+    },
+    "shardeum": {
+      "name": "Shardeum",
+      "networkId": 1,
+      "chainId": 1,
+      "rpcUrl": "https://rpc.shardeum.io",
+      "explorerUrl": "https://explorer.shardeum.io",
+      "nativeCurrency": {
+        "name": "Shardeum",
+        "symbol": "SDM",
+        "decimals": 18
+      }
+    },
+    "bitgert": {
+      "name": "Bitgert",
+      "networkId": 1,
+      "chainId": 1,
+      "rpcUrl": "https://rpc.bitgert.com",
+      "explorerUrl": "https://explorer.bitgert.com",
+      "nativeCurrency": {
+        "name": "Bitgert",
+        "symbol": "BGT",
+        "decimals": 18
+      }
+    }
+  }
+}
